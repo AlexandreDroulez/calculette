@@ -1,0 +1,87 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 520px;
+  margin: auto;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  &-result{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    font-weight: bold;
+    width: 319px;
+    height: 104px;
+    border-left: 1px solid black ;
+    &-info {
+      margin: auto 1rem;
+      color:white;
+      font-size: 2rem;
+    }
+  }
+  &-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    width: 79px;
+    height: 82.2px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    &:active{
+      background-color: green;
+    }
+    
+    &-zero {
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 159px;
+      height: 82.2px;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black ;
+      &:active{
+        background-color: green;
+      }
+    }
+    &-orange {
+      background-color: coral;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: bold;
+      width: 79px;
+      height: 82.2px;
+      border-left: 1px solid black ;
+      border-bottom: 1px solid black ;
+      
+      
+      
+      &:active{
+        background-color: green;
+      }
+    }
+    &-grey {
+      background-color: grey;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: bold;
+      width: 79px;
+      height: 82.2px;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black;
+      
+
+      &:active{
+        background-color: green;
+      }
+    }
+  }
+}
