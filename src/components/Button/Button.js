@@ -11,6 +11,8 @@ const Button = ({
   operator,
   setOperator,
   result,
+  setResetEqual,
+  resetEqual
 }) => {
   return (
     <div
@@ -18,10 +20,10 @@ const Button = ({
       role="button"
       tabIndex={0}
       onClick={() => {
-        goodButton(children, currentValue, setCurrentValue, setOperator, result, setResult, operator)
+        goodButton(children, currentValue, setCurrentValue, setOperator, result, setResult, operator, setResetEqual, resetEqual)
       }}
       onKeyUp={() => {
-        goodButton(children, currentValue, setCurrentValue, setOperator, result, setResult)
+        goodButton(children, currentValue, setCurrentValue, setOperator, result, setResult, operator)
       }}
     >
       {children}

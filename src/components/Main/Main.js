@@ -6,11 +6,12 @@ import Button from "../Button/Button"
 const Main = () => {
   const [result, setResult] = useState("")
   const [operator, setOperator] = useState("")
-  const [currentValue, setCurrentValue] = useState(0)
+  const [currentValue, setCurrentValue] = useState("")
+  const [resetEqual, setResetEqual] = useState(false)
   return (
     <div className="main">
       <div className="main-result">
-        <div className="main-result-info">{currentValue}</div>
+    <div className="main-result-info">{result}{operator}{currentValue}</div>
       </div>
       <Button
         buttonClassName="main-button-grey"
@@ -20,6 +21,8 @@ const Main = () => {
         result={result}
         setResult={setResult}
         setCurrentValue={setCurrentValue}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         AC
       </Button>
@@ -31,6 +34,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         +/-
       </Button>
@@ -42,6 +47,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         %
       </Button>
@@ -53,6 +60,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         /
       </Button>
@@ -64,6 +73,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         7
       </Button>
@@ -75,6 +86,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         8
       </Button>
@@ -86,6 +99,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         9
       </Button>
@@ -97,6 +112,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         x
       </Button>
@@ -106,6 +123,8 @@ const Main = () => {
         operator={operator}
         setOperator={setOperator}
         currentValue={currentValue}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         4
       </Button>
@@ -117,6 +136,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         5
       </Button>
@@ -128,6 +149,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         6
       </Button>
@@ -139,6 +162,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         -
       </Button>
@@ -150,6 +175,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         1
       </Button>
@@ -161,6 +188,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         2
       </Button>
@@ -172,6 +201,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         3
       </Button>
@@ -183,6 +214,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         +
       </Button>
@@ -194,6 +227,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         0
       </Button>
@@ -205,6 +240,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         .
       </Button>
@@ -216,6 +253,8 @@ const Main = () => {
         currentValue={currentValue}
         result={result}
         setResult={setResult}
+        setResetEqual={setResetEqual}
+        resetEqual={resetEqual}
       >
         =
       </Button>
