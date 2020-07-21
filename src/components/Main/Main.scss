@@ -5,23 +5,25 @@
   height: 520px;
   margin: auto;
   border-top: 1px solid black;
-  border-right: 1px solid black;
+  
   &-result{
     display: flex;
     justify-content: flex-end;
-    background-color: black;
+    background-color: white;
     font-weight: bold;
     width: 319px;
     height: 104px;
     border-left: 1px solid black ;
+    border-bottom: 1px solid black;
     &-info {
       margin: auto 1rem;
-      color:white;
+      color:black;
       font-size: 2rem;
     }
   }
   &-button {
     text-align: center;
+    background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,6 +32,7 @@
     height: 82.2px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
+    
     &:active{
       background-color: green;
     }
@@ -44,6 +47,7 @@
       height: 82.2px;
       border-bottom: 1px solid black;
       border-left: 1px solid black ;
+      background-color: blanchedalmond;
       &:active{
         background-color: green;
       }
@@ -55,10 +59,12 @@
       flex-direction: column;
       justify-content: center;
       font-weight: bold;
-      width: 79px;
+      width: 78px;
       height: 82.2px;
       border-left: 1px solid black ;
       border-bottom: 1px solid black ;
+      border-right: 1px solid black;
+      
       
       
       

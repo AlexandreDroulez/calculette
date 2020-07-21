@@ -23,7 +23,7 @@ const Button = ({
         goodButton(children, currentValue, setCurrentValue, setOperator, result, setResult, operator, setResetEqual, resetEqual)
       }}
       onKeyUp={() => {
-        goodButton(children, currentValue, setCurrentValue, setOperator, result, setResult, operator)
+        goodButton(children, currentValue, setCurrentValue, setOperator, result, setResult, operator, setResetEqual, resetEqual)
       }}
     >
       {children}

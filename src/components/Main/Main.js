@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="main-result">
-    <div className="main-result-info">{result}{operator}{currentValue}</div>
+    <div className="main-result-info">{result} {operator} {currentValue}</div>
       </div>
       <Button
         buttonClassName="main-button-grey"
@@ -37,7 +37,7 @@ const Main = () => {
         setResetEqual={setResetEqual}
         resetEqual={resetEqual}
       >
-        +/-
+        C
       </Button>
       <Button
         buttonClassName="main-button-grey"
